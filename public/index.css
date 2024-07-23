@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  font-family: Dosis;
+}
+
+.fa-earth-americas {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+
+.nav-title {
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 92, 128);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
