@@ -3,6 +3,7 @@
   font-family: Dosis;
 }
 
+/* Navbar */
 .fa-earth-americas {
   font-size: 20px;
   color: white;
@@ -23,3 +24,6 @@
   top: 0;
   right: 0;
 }
+
+/* Cards */
+
