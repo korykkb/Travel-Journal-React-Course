@@ -6,20 +6,26 @@ export default function Card(props) {
             <div className="card-container">
                 <div className="img-side">
                     <img 
-                        src={`../images/${props.imageUrl}`}
+                        src={require(`../images/${props.image}`)}
                         alt="Location"
                         className="card-image"
                     />
                 </div>
                 <div className="text-side">
                     <div className="location-container">
-                        <div>{props.location}</div>
-                        <div>{props.googleMapsUrl}</div>
+                        <div className="prop-location">
+                            <i className="fa-solid fa-location-dot"></i>
+                            {props.location}</div>
+                        <a 
+                            href={props.googleMapsUrl} 
+                            target="_blank"
+                            rel="noreferrer"
+                        >View on Google Maps</a>
                     </div>
                     <div className="body-container">
-                        <div>{props.title}</div>
-                        <div>{props.date}</div>
-                        <div>{props.description}</div>
+                        <div className="prop-title">{props.title}</div>
+                        <div className="prop-date">{props.date}</div>
+                        <div className="prop-description">{props.description}</div>
                     </div>
                 </div>
             </div>
